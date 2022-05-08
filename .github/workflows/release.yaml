@@ -1,0 +1,32 @@
+name: Release package
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: ${{ github.token }}
+
+      - uses: actions/checkout@v2
+
+      - uses: rlespinasse/github-slug-action@v3.x
+
+      - name: Set version
+        run: npm version --new-version $(echo ${{ env.GITHUB_REF_SLUG }}|cut -c2-) --no-git-tag-version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Release to GHPR
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
