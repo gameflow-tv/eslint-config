@@ -5,6 +5,9 @@
     "main": "index.js",
     "author": "Gameflow",
     "license": "MIT",
+    "files": [
+        "index.js"
+    ],
     "dependencies": {
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-react-app": "^7.0.1",
