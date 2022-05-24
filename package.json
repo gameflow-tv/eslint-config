@@ -6,19 +6,22 @@
     "author": "Gameflow",
     "license": "MIT",
     "files": [
-        "index.js"
+        "index.js",
+        "browser.js",
+        "jest.js",
+        "node.js"
     ],
-    "dependencies": {
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-config-react-app": "^7.0.1",
+    "peerDependencies": {
         "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-react": "^7.29.4",
-        "prettier": "^2.6.2",
-        "@typescript-eslint/eslint-plugin": "^5.22.0",
-        "@typescript-eslint/parser": "^5.22.0"
+        "eslint": ">= 8",
+        "@typescript-eslint/eslint-plugin": "^5.26.0",
+        "@typescript-eslint/parser": "^5.26.0"
     },
-    "devDependencies": {
-        "eslint": "^8.15.0"
+    "optionalDependencies": {
+        "eslint-plugin-compat": ">= 3",
+        "eslint-plugin-jest": ">= 26",
+        "eslint-plugin-node": ">=11",
+        "eslint-plugin-react": ">= 7",
+        "eslint-plugin-react-hooks": ">= 4"
     }
 }
