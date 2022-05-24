@@ -28,7 +28,7 @@ module.exports = {
     'no-sequences': 'warn',
     'no-unused-vars': 'warn',
     'no-console': 'warn',
-    'no-empty': 'awn',
+    'no-empty': 'warn',
     'no-nested-ternary': 'warn',
     'no-useless-escape': 'warn',
     'no-var': 'warn',
