@@ -83,7 +83,7 @@ module.exports = {
     eqeqeq: 'error',
     // ECMAScript 6
     'arrow-body-style': 'warn',
-    'arrow-parens': ['warn', 'as-needed'],
+    'arrow-parens': ['warn', 'always'],
     'arrow-spacing': 'warn',
     'generator-star-spacing': ['warn', 'after'],
     'no-duplicate-imports': 'warn',
