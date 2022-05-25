@@ -4,7 +4,7 @@
     "description": "ESLint setup for @gameflow-tv",
     "main": "index.js",
     "author": "Gameflow",
-    "license": "MIT",
+    "license": "UNLICENSED",
     "files": [
         "index.js",
         "browser.js",
