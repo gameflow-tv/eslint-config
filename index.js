@@ -100,6 +100,7 @@ module.exports = {
     // Imports
     'import/first': 'warn',
     'import/no-duplicates': 'warn',
+    'import/no-relative-parent-imports': 'error',
     'sort-imports': [
       'warn',
       {
