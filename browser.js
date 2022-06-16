@@ -4,5 +4,6 @@ module.exports = {
   plugins: ['compat'],
   rules: {
     'compat/compat': 'warn',
+    'no-console': 'warn',
   },
 }

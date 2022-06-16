@@ -9,19 +9,24 @@
         "index.js",
         "browser.js",
         "jest.js",
-        "node.js"
+        "node.js",
+        "react.js"
     ],
-    "peerDependencies": {
-        "eslint-plugin-import": "^2.26.0",
-        "eslint": ">= 8",
+    "dependencies": {
         "@typescript-eslint/eslint-plugin": "^5.26.0",
-        "@typescript-eslint/parser": "^5.26.0"
+        "@typescript-eslint/parser": "^5.26.0",
+        "eslint-plugin-import": "^2.26.0"
+    },
+    "peerDependencies": {
+        "eslint": ">= 8"
     },
     "optionalDependencies": {
         "eslint-plugin-compat": ">= 3",
         "eslint-plugin-jest": ">= 26",
         "eslint-plugin-node": ">=11",
         "eslint-plugin-react": ">= 7",
-        "eslint-plugin-react-hooks": ">= 4"
+        "eslint-plugin-react-hooks": ">= 4",
+        "eslint-config-react-app": ">= 7",
+        "eslint-plugin-jsx-a11y": ">= 6"
     }
 }
