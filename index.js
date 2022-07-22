@@ -106,5 +106,6 @@ module.exports = {
         ignoreDeclarationSort: true,
       },
     ],
+    'sort-keys': 'off',
   },
 }
