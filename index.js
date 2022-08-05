@@ -83,7 +83,6 @@ module.exports = {
     'arrow-parens': ['warn', 'always'],
     'arrow-spacing': 'warn',
     'generator-star-spacing': ['warn', 'after'],
-    'no-duplicate-imports': 'warn',
     'no-useless-computed-key': 'warn',
     'object-shorthand': 'warn',
     'prefer-arrow-callback': 'warn',
@@ -97,7 +96,17 @@ module.exports = {
     // Imports
     'import/first': 'warn',
     'import/no-duplicates': 'warn',
-    'import/no-relative-parent-imports': 'error',
+    'no-restricted-imports': [
+      'warn',
+      {
+        patterns: [
+          {
+            group: ['../*'],
+            message: 'Use absolute or aliased imports instead.',
+          },
+        ],
+      },
+    ],
     'sort-imports': [
       'warn',
       {
