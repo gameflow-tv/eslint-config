@@ -5,7 +5,6 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: { impliedStrict: true },
-    sourceType: 'module',
   },
   settings: {
     'mdx/code-blocks': true,
