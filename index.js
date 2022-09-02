@@ -92,6 +92,7 @@ module.exports = {
     'rest-spread-spacing': 'warn',
     'sort-imports': 'warn',
     'template-curly-spacing': 'warn',
+    'curly': 'error',
     'yield-star-spacing': 'warn',
     // Imports
     'import/first': 'warn',
