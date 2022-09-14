@@ -12,13 +12,12 @@
         "node.js",
         "react.js"
     ],
-    "dependencies": {
-        "eslint-plugin-import": "^2.26.0",
-        "@typescript-eslint/eslint-plugin": "^5.32.0",
-        "@typescript-eslint/parser": "^5.32.0"
-    },
     "peerDependencies": {
-        "eslint": ">= 8"
+        "eslint": ">= 8",
+        "@typescript-eslint/eslint-plugin": ">=5",
+        "@typescript-eslint/parser": ">=5",
+        "eslint-config-prettier": ">=8",
+        "eslint-plugin-import": ">=2"
     },
     "optionalDependencies": {
         "eslint-config-react-app": ">= 7",
@@ -28,5 +27,18 @@
         "eslint-plugin-node": ">=11",
         "eslint-plugin-react": ">= 7",
         "eslint-plugin-react-hooks": ">= 4"
+    },
+    "devDependencies": {
+        "eslint-config-react-app": "7.0.1",
+        "eslint-plugin-compat": "4.0.2",
+        "eslint-plugin-jest": "27.0.4",
+        "eslint-plugin-jsx-a11y": "6.6.1",
+        "eslint-plugin-node": ">=11.1.0",
+        "eslint-plugin-react-hooks": "4.6.0",
+        "@typescript-eslint/eslint-plugin": "^5.37.0",
+        "@typescript-eslint/parser": "^5.37.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-react": "^7.31.8"
     }
 }
