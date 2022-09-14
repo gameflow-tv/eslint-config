@@ -1,7 +1,7 @@
 module.exports = {
   env: { es2021: true },
   extends: ['eslint:recommended'],
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: { impliedStrict: true },
@@ -90,13 +90,15 @@ module.exports = {
     'prefer-destructuring': 'warn',
     'prefer-template': 'warn',
     'rest-spread-spacing': 'warn',
-    'sort-imports': 'warn',
     'template-curly-spacing': 'warn',
     'curly': 'error',
     'yield-star-spacing': 'warn',
     // Imports
     'import/first': 'warn',
-    'import/no-duplicates': 'warn',
+    'import/no-relative-parent-imports': 'off',
+    'no-duplicate-imports': 'off',
+    'no-implicit-coercion': 'error',
+    '@typescript-eslint/consistent-type-imports': 'off',
     'no-restricted-imports': [
       'warn',
       {
