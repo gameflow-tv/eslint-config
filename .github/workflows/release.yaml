@@ -24,6 +24,6 @@ jobs:
         run: npm ci
 
       - name: Release to GHPR
-        run: npm publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GHPR_TOKEN }}
